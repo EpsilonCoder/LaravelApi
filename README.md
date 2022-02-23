@@ -98,7 +98,7 @@ Route::get('/idee', [IdeeController::class, 'index']);
 # Testons si notre api marche a merveille
 Tout d abord ajoutons des entrées dans notre base de données
 
-<img src="https://github.com/EpsilonCoder/Boite-A-idees/blob/main/image-demo/testdb.PNG"   width=100% /> 
+<img src="https://github.com/EpsilonCoder/Boite-A-idees/blob/main/image-demo/test1db.PNG"   width=100% /> 
 
 # Testons si les urls de notre Api marche  >>> http://127.0.0.1:8000/api/idee
 <img src="https://github.com/EpsilonCoder/Boite-A-idees/blob/main/image-demo/verificationapi.PNG"   width=100% /> 
