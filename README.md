@@ -22,7 +22,7 @@ DB_PASSWORD=
 
 ```
 # Crrer la base de donnée backend sur phpmyadmin
-<img src="https://github.com/EpsilonCoder/Boite-A-idees/blob/main/image-demo/backend.PNG"   width=100% /> 
+<img src="https://github.com/EpsilonCoder/Boite-A-idees/blob/main/image-demo/database.PNG"   width=100% /> 
 
 # Creation du model et du controller
 Vous pouvez le faire de deux manieres:<br>
