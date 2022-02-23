@@ -1,8 +1,5 @@
-# Réalisation d'une application boite à idée avec Laravel et React (hooks)
-<img src="https://simplonline.co/_next/image?url=https%3A%2F%2Fsimplonline-v3-prod.s3.eu-west-3.amazonaws.com%2Fmedia%2Fimage%2Fjpg%2F1f55c347-6db9-4700-b3e7-395b986958e2.jpg&w=1280&q=75" width=100%/>
-#  I commencons par créer par notre l' API backend
-Vue que le fronten et le backend fonction sur deux technologies differentes , on a jugé naicessaire de commencer par creer la partie 
-backend qui est basé sur le framework Laravel.
+# Réalisation d'un API avec Laravel
+<img src="http://atomrace.com/blog/wp-content/uploads/2018/04/03-tutorial-laravel-API-REST-restful-app-web-Laravel-5.5.png" width=100%/>
 
 #  1-creation du projet backend
 
