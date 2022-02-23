@@ -22,7 +22,7 @@ DB_PASSWORD=
 
 ```
 # Crrer la base de donnée backend sur phpmyadmin
-<img src="backend.PNG"   width=100¨% /> 
+<img src="https://github.com/EpsilonCoder/Boite-A-idees/blob/main/image-demo/backend.PNG"   width=100% /> 
 
 # Creation du model et du controller
 Vous pouvez le faire de deux manieres:<br>
@@ -44,7 +44,7 @@ php artisan make:model idee -mc
 ```
 # Creations des champs de notre tables idees
 
-<img src="champs.PNG"   width=100¨% />
+<img src="https://github.com/EpsilonCoder/Boite-A-idees/blob/main/image-demo/champs.PNG"   width=100% />
 Creer les champs dont vous avez besoin pour votre base de donnée pour notre cas on besoin de(libelle,description,message)
 
 ```php
@@ -64,8 +64,8 @@ public function up()
 ```php
 php artisan migrate
 ```
-<img src="db1.PNG"   width=100¨% /> 
-<img src="db2.PNG"   width=100¨% /> 
+<img src="https://github.com/EpsilonCoder/Boite-A-idees/blob/main/image-demo/db1.PNG"   width=100% /> 
+<img src="https://github.com/EpsilonCoder/Boite-A-idees/blob/main/image-demo/db2.PNG"   width=100% /> 
 # ouvrez le fichier IdeeController.php 
 
 ```php
@@ -98,10 +98,10 @@ Route::get('/idee', [IdeeController::class, 'index']);
 # Testons si notre api marche a merveille
 Tout d abord ajoutons des entrées dans notre base de données
 
-<img src="testdb.PNG"   width=100¨% /> 
+<img src="https://github.com/EpsilonCoder/Boite-A-idees/blob/main/image-demo/testdb.PNG"   width=100% /> 
 
 # Testons si les urls de notre Api marche  >>> http://127.0.0.1:8000/api/idee
-<img src="verificationapi.PNG"   width=100¨% /> 
+<img src="https://github.com/EpsilonCoder/Boite-A-idees/blob/main/image-demo/verificationapi.PNG"   width=100% /> 
 
 LA PARTIE  BACKEND EST TERMINEE  VOUS POUVEZ VOUS FELICITEZ 
 
