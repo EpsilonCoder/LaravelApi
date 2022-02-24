@@ -100,9 +100,68 @@ Tout d abord ajoutons des entrées dans notre base de données
 # Testons si les urls de notre Api marche  >>> http://127.0.0.1:8000/api/idee
 <img src="https://github.com/EpsilonCoder/Boite-A-idees/blob/main/image-demo/verificationapi.PNG"   width=100% /> 
 
-LA PARTIE  BACKEND EST TERMINEE  VOUS POUVEZ VOUS FELICITEZ 
 
-<img src="https://c.tenor.com/-jvrI-Uvb6YAAAAM/noblainer-napoleon-dynamite.gif"   width=100% />
+# Essayons de Creer notre Fontend avec le framework React afin de recuperer les donnees de notre API
+
+```js
+npx create-react-app EpsilonFront
+cd EpsilonFront
+npm start
+```
+De nombreux projets sur le web doivent s’interfacer avec une API REST à un certain stade de leur développement. Axios est un client HTTP léger basé sur le service $http et est similaire à l’API native JavaScript Fetch.
+Axios est basé sur Promise, ce qui vous permet de profiter des avantages d’async de JavaScript et await pour un code asynchrone plus lisible.
+
+# installons axios
+```
+npm install axios
+```
+Ouvrez le ficher App.js 
+<img src="https://github.com/EpsilonCoder/Boite-A-idees/blob/main/image-demo/react1.PNG"   width=100% /> 
+
+# Recuperer les données de notre API
+
+```js
+import './App.css';
+import { useState, useEffect } from "react";
+import axios from "axios";
+function App() {
+  const [idees, setIdees,] = useState([])
+
+  useEffect(() => {
+    async function Ajouter() {
+      try {
+        const epsilon = await axios.get("http://127.0.0.1:8000/api/idee")
+        console.log(epsilon.data)
+        setIdees(epsilon.data)
+      } catch (error) {
+        console.log(error)
+      }
+
+    }
+    Ajouter()
+
+  }, [])
+  return (
+    <div className="App">
+      <h1>Je suis connecter sur React our recuperer lez donnees fourni parmon api</h1>
+      {
+        idees.map((idee, i) => {
+          return (
+            <h2 key={i}>{idee.message}</h2>
+          )
+        })
+      }
+    </div>
+  );
+}
+
+export default App;
+
+
+```
+
+
+
 
 
 
