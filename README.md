@@ -143,11 +143,11 @@ function App() {
   }, [])
   return (
     <div className="App">
-      <h1>Je suis connecter sur React our recuperer lez donnees fourni parmon api</h1>
+      <h1>Je suis sur react afin de recuperer les données de mon API</h1>
       {
         idees.map((idee, i) => {
           return (
-            <h2 key={i}>{idee.message}</h2>
+            <h4 key={i}>{idee.message}</h4>
           )
         })
       }
@@ -159,6 +159,11 @@ export default App;
 
 
 ```
+
+<img src="https://github.com/EpsilonCoder/Boite-A-idees/blob/main/image-demo/react1.PNG"   width=100% /> 
+
+
+
 
 
 
