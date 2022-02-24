@@ -160,7 +160,7 @@ export default App;
 
 ```
 
-<img src="https://github.com/EpsilonCoder/Boite-A-idees/blob/main/image-demo/react1.PNG"   width=100% /> 
+<img src="https://github.com/EpsilonCoder/Boite-A-idees/blob/main/image-demo/react2.PNG"   width=100% /> 
 
 
 
