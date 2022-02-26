@@ -235,6 +235,20 @@ class IdeeController extends Controller
 
 ```
 
+# Testons maintenant avec Postman si nous pouvons poster de nouveau donnée
+
+<img src="https://github.com/EpsilonCoder/Boite-A-idees/blob/main/image-demo/post3.PNG"   width=100% />
+
+Regardons si les données sont bien enregistré dans la base .
+
+<img src="https://github.com/EpsilonCoder/Boite-A-idees/blob/main/image-demo/post4.PNG"   width=100% />
+
+
+
+
+
+
+
 
 
 
