@@ -164,6 +164,84 @@ export default App;
 
 <img src="https://github.com/EpsilonCoder/Boite-A-idees/blob/main/image-demo/react2.PNG"   width=100% /> 
 
+# 😒 Etes vous d'accord que pour l instant vous pouvez que faire l affichage des données de l api.
+# Ne serait t'il pas interessant de pouvoir ajouter des informations , modifier ou meme de supprimer des informations.
+
+# 🤦‍♀️🤦‍♀️🤦‍♀️ On fait comment ?
+Pas de panique c est tres simple faut tout juste revenir sur ton application laravel 
+ensuite specifier des routes et des methodes afin de permettre de permettre a l api de
+d accepter des requettes post,put,delete.
+
+Ouvrez le model => idee.php
+
+<img src="https://github.com/EpsilonCoder/Boite-A-idees/blob/main/image-demo/post1.PNG"   width=100% /> 
+ajouter => protected $fillable = [
+        "libelle",
+        "description",
+        "message",
+    ];
+    
+C'est pour spécifier les champs de notre base de donnée.
+```php
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class idee extends Model
+{
+    use HasFactory;
+    protected $fillable = [
+        "libelle",
+        "description",
+        "message",
+    ];
+}
+
+```
+Rendez vous dans votre controlleur pour ajouter une methode post a votre controlleur.
+<img src="https://github.com/EpsilonCoder/Boite-A-idees/blob/main/image-demo/post2.PNG"   width=100% />
+La methode d'ajout
+```php
+ public function store(Request $request)
+    {
+        return idee::create($request->all());
+    }
+```
+
+```php
+
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Models\idee;
+
+class IdeeController extends Controller
+{
+    public function index()
+    {
+        return idee::All();
+    }
+
+    public function store(Request $request)
+    {
+        return idee::create($request->all());
+    }
+}
+
+```
+
+
+
+
+
+
+
+
 
 
 
